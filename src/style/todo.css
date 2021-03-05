@@ -1,0 +1,117 @@
+body {
+  background: #f0e7ed;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Container */
+.todo {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 5vh;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 50px;
+  color: #83677B;
+}
+
+/* List of items */
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  transition: box-shadow .20s ease;
+  list-style: none;
+  margin: 5px;
+  border-radius: 15px;
+}
+
+li:hover {
+  box-shadow: 0 5px 10px -5px rgba(1, 1, 1, 1);
+  border-radius: 15px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked+label {
+  background: #83677B;
+  color: #ffffff;
+}
+
+input:checked+label p {
+  text-decoration: line-through 2px;
+}
+
+input[type="checkbox"]:checked+label {
+  order: 1;
+}
+
+label {
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+
+/* Delete one button - */
+.delete-one {
+  padding: 10px;
+  width: fit-content;
+  border: 2px solid #2E1114;
+  border-radius: 100px;
+  cursor: pointer;
+  outline: none;
+
+}
+
+.delete-one:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+/* Input */
+form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.todo-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 100px;
+  border: 2px solid #2E1114;
+  outline: none;
+  margin-top: 2px;
+  margin-right: 2px;
+}
+
+.todo-input:hover {
+  box-shadow: 5px 5px 10px -5px rgba(1, 1, 1, 1);
+}
+
+.press {
+  padding: 10px;
+  width: fit-content;
+  border: 2px solid #2E1114;
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.press:hover {
+  background: #000000;
+  color: #ffffff;
+  outline: none;
+}
